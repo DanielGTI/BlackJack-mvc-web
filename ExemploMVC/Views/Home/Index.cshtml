@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "IMC";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo!!</h1>
+    <p>Aprender sobre  <a href="https://www.programasaudefacil.com.br/calculadora-de-imc"> MVC</a>.</p>
+</div>
+
+<form class="container" id="formulario">
+    <div class="col-md-3">
+        <fieldset class="form-group">
+            <legend>Cálculo IMC</legend>  
+            
+            <label for="peso">Peso:</label>
+            <input type="text" name="peso" class="form-control" />
+            
+            <label for="altura">Altura: </label>
+            <input type="text" name="altura" class="form-control" />
+
+            <label for="imc">IMC: </label>
+            <input type="text" name="imc" class="form-control" disabled="disabled"/>
+            <br />
+            <button type="button" class="btn btn-warning" onclick="calcularIMC()">Calcular IMC</button>
+        </fieldset>
+    </div>
+</form>
